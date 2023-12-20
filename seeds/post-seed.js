@@ -14,12 +14,11 @@ const PostData = [
       "user_id": "2",
     },
     {
-      "name": "Handlebars",
-      "description": "Great way to organize your HTML",
+      "name": "prettier",
+      "description": "Great way to format your code",
       "date_created": 2023-12-21,
       "user_id": "3",
     },
-    
 ]
 
 const seedPosts = () => Post.bulkCreate(PostData);
