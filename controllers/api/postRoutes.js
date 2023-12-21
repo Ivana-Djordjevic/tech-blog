@@ -2,9 +2,9 @@ const router = require('express').Router();
 const { Post } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.use(withAuth);
+// router.use(withAuth);
 
-router.post('/', async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
     try {
       const newPost = await Post.create({
         ...req.body,
@@ -16,3 +16,5 @@ router.post('/', async (req, res) => {
       res.status(400).json(err);
     }
   });
+
+  module.exports = router;

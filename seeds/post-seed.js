@@ -5,19 +5,19 @@ const PostData = [
       "name": "Handlebars",
       "description": "Great way to organize your HTML",
       "date_created": 2023-12-19,
-      "user_id": "1",
+      "user_id": 1,
     },
     {
       "name": "eslint",
-      "description": "Great way to keeo your conde consistent",
+      "description": "Great way to keep your code consistent",
       "date_created": 2023-12-20,
-      "user_id": "2",
+      "user_id": 1,
     },
     {
       "name": "prettier",
       "description": "Great way to format your code",
       "date_created": 2023-12-21,
-      "user_id": "3",
+      "user_id": 1,
     },
 ]
 
