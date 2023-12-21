@@ -1,2 +1,14 @@
 <!-- Loop over each object in the projects array -->
 <h1>Welcome to the Tech Blog</h1>
+
+<div>
+    <h4>
+        Please sign up/sign in to view the details of these posts on the dashboard.
+    </h4>
+</div>
+
+{{#each posts as |post|}}
+    <div>
+        <h4><a href="/post/{{post.id}}">{{post.name}}</a></h4>
+    </div>
+{{/each}}
