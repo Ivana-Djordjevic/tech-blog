@@ -3,7 +3,19 @@ const { User, Post } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
-  res.render('homepage')
+  try {
+    const postData = await Post.findAll();
+
+    const posts = postData.get({ plain: true });
+    console.log(posts)
+
+    res.render('homepage', {
+      ...posts
+    });
+  } catch (err) {
+    console.log(err)
+    res.status(500).json(err);
+  }
 });
 
 router.get('/profile', withAuth, async (req, res) => {
