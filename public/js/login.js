@@ -13,6 +13,9 @@ const loginFormHandler = async (event) => {
       headers: { 'Content-Type': 'application/json' },
     });
 
+    const result = await response.json()
+    console.log(result)
+
     if (response.ok) {
       // If successful, redirect the browser to the profile page
       document.location.replace('/profile');

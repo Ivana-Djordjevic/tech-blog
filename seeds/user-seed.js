@@ -4,8 +4,13 @@ const UserData = [
     {
       "name": "Flora",
       "email": "test@test.com",
-      "password": "$2b$10$umxVq2bN4ZCvAC2bJkapvu2uY2i7RmKsBTzgIH3rp.q5sIAF44dra"
-    }
+      "password": "$2b$10$daObReD5OEQ1Ddf99Ire3eQykvmdcUiEG274NPZN4KmgGjTQ0dKzq"
+    },
+    {
+      "name": "Layla",
+      "email": "test@test2.com",
+      "password": "$2b$10$daObReD5OEQ1Ddf99Ire3eQykvmdcUiEG274NPZN4KmgGjTQ0dKzq"
+    },
 ]
 
 const seedUsers = () => User.bulkCreate(UserData);
