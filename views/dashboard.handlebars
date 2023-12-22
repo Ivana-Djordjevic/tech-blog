@@ -1,20 +1,26 @@
 <h1>Dashboard</h1>
 
-<h3>Create a New Post:</h3>
+<div>
+  <button class="new-post"> create a new blog post</button>
+</div>
 
-<form class="new-post-form">
-  <div>
-    <label for="post-name">post name:</label>
-    <input class="form-input" type="text" id="post-name" name="post-name" />
-  </div>
-  <div>
-    <label for="post-desc">description:</label>
-    <textarea id="post-desc" name="post-desc"></textarea>
-  </div>
-  <div>
-    <button type="submit">Create</button>
-  </div>
-</form>
+<div id="post-form" class="hidden">
+  <h3>Create a New Post:</h3>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-name">post name:</label>
+      <input class="form-input" type="text" id="post-name" name="post-name" />
+    </div>
+    <div>
+      <label for="post-desc">description:</label>
+      <textarea id="post-desc" name="post-desc"></textarea>
+    </div>
+    <div>
+      <button type="submit">Create</button>
+    </div>
+  </form>
+</div>
 
 {{#if posts.length}}
   <div class="post-list">

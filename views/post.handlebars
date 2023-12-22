@@ -36,6 +36,7 @@
   </div>
 {{/if}}
 
+ {{#if logged_in}}
 <form id="comment-form">
     <label for="comment">Comment on this post:</label>
     <div>
@@ -46,5 +47,6 @@
     </div>
     <input type="hidden" id="hidden-id" value="{{id}}">
 </form>
+ {{/if}}
 
 <script src="/js/comment.js"></script>

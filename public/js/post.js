@@ -1,3 +1,10 @@
+const postForm = document.querySelector('#post-form');
+const newPostBtn = document.querySelector('.new-post');
+
+newPostBtn.addEventListener('click', () => {
+  postForm.classList.remove('hidden')
+});
+
 const newFormHandler = async (event) => {
     event.preventDefault();
   
