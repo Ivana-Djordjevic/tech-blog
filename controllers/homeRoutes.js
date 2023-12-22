@@ -27,20 +27,17 @@ router.get('/', async (req, res) => {
 
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
-    const postData = await Post.findAll({
-      include: [
-        {
-          model: User, 
-          attributes: ['name'],
-        }
-      ]
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] },
+      include: [{ model: Post }],
     });
 
-    const posts = postData.map((post) => post.get({ plain: true }));
-    console.log(posts)
+    const user = userData.get({ plain: true });
+    console.log('------DASHBOARD HERE--------')
+    console.log(user);
 
     res.render('dashboard', {
-      posts,
+      ...user,
       logged_in: true
     });
   } catch (err) {
@@ -61,13 +58,15 @@ router.get('/post/:id', async (req, res) => {
           model: Comment,
           attributes: [
             'comment', 
-            'date_created'
+            'date_created',
+            'user_id'
           ]
         }
       ],
     });
 
     const post = postData.get({ plain: true });
+    console.log(post)
 
     res.render('post', {
       ...post,

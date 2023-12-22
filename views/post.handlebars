@@ -18,6 +18,9 @@
             <p>{{comment.comment}}</p>
         </div>
         <div>
+            <p>by: {{user.name}}</p>
+        </div>
+        <div>
             <p>on: {{ format_date comment.date_created }}</p>
         </div>
         {{/each}}
@@ -32,4 +35,7 @@
     <div>
         <button type="submit">submit comment</button>
     </div>
+    <input type="hidden" id="hidden-id" value="{{id}}">
 </form>
+
+<script src="/js/comment.js"></script>
