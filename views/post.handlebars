@@ -5,10 +5,13 @@
     <p>{{description}}</p>
 </div>
 <div>
+    <p>By: {{user.name}}</p>
+</div>
+<div>
     <p>Created on: {{format_date date_created}}</p>
 </div>
 <div>
-    <p>By: {{user.name}}</p>
+    <p>-----------------------------------</p>
 </div>
 
 {{#if comments.length}}
@@ -18,10 +21,16 @@
             <p>{{comment.comment}}</p>
         </div>
         <div>
-            <p>by: {{user.name}}</p>
+            <p>by: {{comment.user.name}}</p>
+        </div>
+        <div>
+            
         </div>
         <div>
             <p>on: {{ format_date comment.date_created }}</p>
+        </div>
+        <div>
+            <p>-----------------------------------</p>
         </div>
         {{/each}}
   </div>

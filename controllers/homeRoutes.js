@@ -60,6 +60,12 @@ router.get('/post/:id', async (req, res) => {
             'comment', 
             'date_created',
             'user_id'
+          ],
+          include: [
+            {
+              model: User,
+              attributes: ['name'],
+            }
           ]
         }
       ],
@@ -69,6 +75,23 @@ router.get('/post/:id', async (req, res) => {
     console.log(post)
 
     res.render('post', {
+      ...post,
+      logged_in: true
+    });
+  } catch (err) {
+    console.log(err)
+    res.status(500).json(err);
+  }
+});
+
+router.get('/edit/:id', async (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id);
+
+    const post = postData.get({ plain: true });
+    console.log(post)
+
+    res.render('edit', {
       ...post,
       logged_in: true
     });

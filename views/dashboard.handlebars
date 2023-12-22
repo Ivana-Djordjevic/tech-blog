@@ -1,21 +1,20 @@
- <h1>Dashboard</h1>
+<h1>Dashboard</h1>
 
-    <h3>Create a New Post:</h3>
+<h3>Create a New Post:</h3>
 
-    <form class="new-post-form">
-      <div>
-        <label for="post-name">post name:</label>
-        <input class="form-input" type="text" id="post-name" name="post-name" />
-      </div>
-      <div>
-        <label for="post-desc">description:</label>
-        <textarea id="post-desc" name="post-desc"></textarea>
-      </div>
-      <div>
-        <button type="submit">Create</button>
-      </div>
-    </form>
-
+<form class="new-post-form">
+  <div>
+    <label for="post-name">post name:</label>
+    <input class="form-input" type="text" id="post-name" name="post-name" />
+  </div>
+  <div>
+    <label for="post-desc">description:</label>
+    <textarea id="post-desc" name="post-desc"></textarea>
+  </div>
+  <div>
+    <button type="submit">Create</button>
+  </div>
+</form>
 
 {{#if posts.length}}
   <div class="post-list">
@@ -30,10 +29,9 @@
         <p>{{post.description}}</p>
       </div>
       <div>
-        <button data-id="{{post.id}}">DELETE</button>
-        <button data-id="{{post.id}}">UPDATE</button>
+        <button class="delete-button" data-id="{{post.id}}">DELETE</button>
+        <button class="edit-button" data-id="{{post.id}}">UPDATE</button>
       </div>
-  
     
     {{/each}}
   </div>
@@ -42,3 +40,4 @@
 
 <script src="./js/post.js"></script>
 <script src="/js/delete.js"></script>
+<script src="/js/edit.js"></script>
