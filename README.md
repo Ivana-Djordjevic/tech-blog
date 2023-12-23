@@ -59,8 +59,21 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 ```
 
 screenshots:
+(note that the screenshots were taken from the localhost, deployed page has different posts)
 
-deployed link:
+homepage:
+<img width="490" alt="homepage" src="https://github.com/Ivana-Djordjevic/tech-blog/assets/127266659/4007c522-93f8-4fc8-bec4-139722988cce">
+
+login/sign up page:
+<img width="254" alt="login:signup" src="https://github.com/Ivana-Djordjevic/tech-blog/assets/127266659/10e0e43a-9bce-446d-ae3c-907e210f402d">
+
+dashboard:
+<img width="358" alt="dashboard" src="https://github.com/Ivana-Djordjevic/tech-blog/assets/127266659/19b4ca28-56bf-4d44-b3c1-6a6a2e86930d">
+
+create new post:
+<img width="356" alt="create new post" src="https://github.com/Ivana-Djordjevic/tech-blog/assets/127266659/f3709ff4-f55f-43dc-98f5-b53f290ec199">
+
+[deployed heorku link](https://techblogg-7083d95f8068.herokuapp.com/) 
 
 ## Installation
 
