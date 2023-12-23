@@ -17,7 +17,8 @@ router.get('/', async (req, res) => {
     console.log(posts)
 
     res.render('homepage', {
-      posts
+      posts,
+      logged_in: req.session.logged_in
     });
   } catch (err) {
     console.log(err)
@@ -38,7 +39,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
 
     res.render('dashboard', {
       ...user,
-      logged_in: true
+      logged_in: req.session.logged_in
     });
   } catch (err) {
     console.log(err)

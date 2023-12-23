@@ -1,7 +1,18 @@
 # tech-blog
-CMS-style blog site where users can publish articles, blog posts, thoughts and opinions
 
-## User Story
+![License](https://img.shields.io/badge/License-MIT_License-lightblue.svg)
+
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Credit](#credit)
+
+## Description
+
+### User Story
 
 ```md
 AS A developer who writes about tech
@@ -9,7 +20,7 @@ I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ```
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 ```md
 GIVEN a CMS-style blog site
@@ -46,3 +57,29 @@ THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts
 ```
+
+screenshots:
+
+deployed link:
+
+## Installation
+
+- bcrypt
+- connect-session-sequelize
+- express
+- express-handlebars
+- express-session
+- mysql2
+- sequelize
+
+## Usage 
+
+CMS-style blog site where users can publish articles, blog posts, thoughts and opinions.
+
+## License
+
+This application is covered under: MIT License.  
+
+## Credit
+
+*[UCD readme file](https://git.bootcampcontent.com/University-of-California---Davis/UCD-VIRT-FSF-PT-09-2023-U-LOLC/-/blob/main/14-MVC/02-Challenge/README.md)

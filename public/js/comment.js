@@ -22,7 +22,7 @@ const commentHandler = async (event) => {
     }
   };
     
-  document
-    .querySelector('#comment-form')
-    .addEventListener('submit', commentHandler);
+document
+  .querySelector('#comment-form')
+  .addEventListener('submit', commentHandler);
   

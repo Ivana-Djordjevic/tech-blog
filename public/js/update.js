@@ -20,7 +20,7 @@ const updateHandler = async (event) => {
         alert('Failed to update post');
         }
     }
-}
+};
 
 document
     .querySelector('.update-button')
