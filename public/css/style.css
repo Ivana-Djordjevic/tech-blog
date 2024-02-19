@@ -1,3 +1,13 @@
 .hidden {
     display: none;
 }
+
+body {
+    background: radial-gradient(at 98% 69%, #9B5DE5 0px, transparent 50%), 
+                radial-gradient(at 89% 12%, #F15BB5 0px, transparent 50%), 
+                radial-gradient(at 27% 51%, #FF99C8 0px, transparent 50%), 
+                radial-gradient(at 82% 85%, #70D6FF 0px, transparent 50%), 
+                radial-gradient(at 3% 34%, #FF70A6 0px, transparent 50%), 
+                radial-gradient(at 0% 18%, #FF9770 0px, transparent 50%), 
+                radial-gradient(at 2% 70%, #FFD670 0px, #EDF7BB 50%);
+}
